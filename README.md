@@ -6,7 +6,8 @@
 
 ## 시작
 
-- 요리 커뮤니티 겸 밀키트 쇼핑몰 팀 프로젝트입니다.
+- 커뮤니티 겸 쇼핑몰 웹 프로젝트입니다.
+- 팀 프로젝트로, 전체 웹 사이트 중 서브 게시판1(레시피 후기)을 작업했습니다.
 - [데모 사이트 바로가기][데모]
 
 ---
@@ -15,12 +16,12 @@
 
 ### 기간
 
-- 20.10.20.~20.11.17.
+- 20.10.20. ~ 20.11.17.
 
 ### 목표
 
-- JSP Model2로 구현해 봅니다.
-- Spring(STS4)을 사용해 봅니다.
+- JSP Model2로 주요 기능을 구현합니다.
+- Spring(STS4)을 사용합니다.
 
 ### 사용
 
@@ -72,7 +73,7 @@
 ![your_select](https://user-images.githubusercontent.com/68595933/190130211-3f338d38-3e84-4d32-b2d6-fa2dfd796e9f.png)
 ![modal](https://user-images.githubusercontent.com/68595933/190130414-28192588-3649-437b-9e0f-285d5874c3d2.png)
 
-- 1.1 필터링/검색창 
+- 1.1. 필터링/검색창 
   - 헤더의 검색창은 '오늘 뭐 먹지?(메인 게시판)'의 해시태그 및 검색창과 연동됩니다.
   - YOUR SELECT는 '오늘은 뭘로 요리하지?(모달창)'를 불러옵니다.
   - 모달창에서 해시태그 선택을 완료하면 해당 재료가 들어가는 레시피만 필터링해 보여줍니다.
@@ -80,7 +81,7 @@
 ![contents](https://user-images.githubusercontent.com/68595933/190130867-4c2c9161-6853-4d23-bba7-7fab7fba2833.png)
 ![today's_recipe](https://user-images.githubusercontent.com/68595933/190131239-ae7fd551-f5cd-44c0-affe-681f86699a94.png)
 
-- 1.2 컨텐츠 영역
+- 1.2. 컨텐츠 영역
   - LOVE.EAT의 하위 이미지를 클릭하면 해당 페이지로 이동합니다.
   - TODAY'S RECIPE는 오늘뭐먹지 페이지에서 가장 조회수가 높은 게시글들을 출력합니다.
 
@@ -91,37 +92,38 @@
 ![login](https://user-images.githubusercontent.com/68595933/190131563-473f50de-e902-4a55-827d-efd444a5d763.png)
 ![encryption](https://user-images.githubusercontent.com/68595933/190131665-35fc41c4-e94f-4bab-9033-4d8c7f767b23.png)
 
-- 2.1 로그인/로그아웃
-  - SNS 로그인/로그아웃
-  - 비밀번호 암호화
+- 2.1. 로그인/로그아웃
+  - SNS 계정(네이버, 카카오, 구글)으로도 로그인/로그아웃 가능합니다.
+  - 비밀번호를 암호화해 서버에 저장합니다.
 
 ![sign_up](https://user-images.githubusercontent.com/68595933/190132045-1aaacb29-1fe4-4945-9081-f69963bf5f53.png)
 ![withdrawal](https://user-images.githubusercontent.com/68595933/190132187-4126cbe0-eafc-43f5-8bb9-80d6f2da4278.png)
 
-- 2.2 회원가입/회원탈퇴
+- 2.2. 회원가입/회원탈퇴
+  - 회원가입 페이지에서 이메일 인증 후 가입합니다.
+  - 회원탈퇴 페이지에서 비밀번호 입력 후 탈퇴합니다.
 
 ![forgot_id](https://user-images.githubusercontent.com/68595933/190135580-42293015-b4a0-467a-b7f5-cecfdd3a2a9d.png)
 ![forgot_pw](https://user-images.githubusercontent.com/68595933/190135998-f59abbdd-1713-4ef7-91c6-0a425fad0e7f.png)
 
-- 2.3 이메일 인증
-  - 회원가입시 인증
-  - ID/비밀번호 찾기
+- 2.3. 이메일 인증
+  - 회원가입시 이메일 인증이 필요합니다.
+  - 가입시 입력한 이메일 주소를 통해 기존 ID나 임시 비밀번호를 받을 수 있습니다.
 
 ![edit_nickname](https://user-images.githubusercontent.com/68595933/190136754-927a7767-dac5-45d8-9170-231b2d3b1d80.png)
 ![edit_password](https://user-images.githubusercontent.com/68595933/190136790-19e89d44-df32-4412-8f26-a9f4f428c41f.png)
 
-- 2.4 회원정보
-  - 닉네임/이메일 수정
-  - 비밀번호 수정
+- 2.4. 회원정보
+  - 닉네임, 이메일, 비밀번호를 수정합니다.
 
 ![manage_board](https://user-images.githubusercontent.com/68595933/190137694-a27980b0-33e6-4a2a-86b9-2a6dffcc01a2.png)
 ![manage_member](https://user-images.githubusercontent.com/68595933/190137833-ce154730-d897-413c-8dd7-b524f0061cd8.png)
 ![manager_menu](https://user-images.githubusercontent.com/68595933/190137963-b2b6429c-4ed1-4401-97c6-31a0010ec4da.png)
 
-- 2.5 관리자 계정
-  - 게시판 관리(읽기/검색/삭제)
-  - 회원 관리(읽기/검색/삭제)
-  - 배송 관리(배송상태 변경)
+- 2.5. 관리자 계정
+  - 게시판 관리(읽기/검색/삭제) 가능합니다.
+  - 회원 관리(읽기/검색/삭제) 가능합니다.
+  - 배송 관리(배송상태 변경) 가능합니다.
 
 ---
 
@@ -130,8 +132,8 @@
 ![search](https://user-images.githubusercontent.com/68595933/190153348-d5b04baf-6616-47d5-a131-145ec8c176ea.png)
 ![hashtag](https://user-images.githubusercontent.com/68595933/190153388-70656be5-5da0-48fb-80c3-ab82a5dfc387.png)
 
-- 3.1 필터링/검색창
-  - 제목/내용/제목+내용/작성자로 검색합니다.
+- 3.1. 필터링/검색창
+  - (1)제목, (2)내용, (3)제목과 내용, (4)작성자로 검색합니다.
   - 검색창 하단에 사용률이 높은 해시태그들을 노출합니다.
   - 해시태그를 클릭하면 1.1과 마찬가지로 해당 재료가 들어가는 레시피(게시글)만 필터링해 보여줍니다.
   - 레시피는 한 페이지에 9개(3*3)씩 출력되며 페이징 버튼을 통해 다른 페이지로 이동합니다.
@@ -139,17 +141,17 @@
 ![recipe_view](https://user-images.githubusercontent.com/68595933/190154481-5a0dcac1-94b8-4b08-b041-6731af94a92c.png)
 ![recipe_write](https://user-images.githubusercontent.com/68595933/190154647-d14f3503-4422-4ba7-b3f8-c1199df1f4fb.png)
 
-- 3.2 게시판 CRUD
-  - 레시피의 등록/읽기/수정/삭제가 가능합니다.
-  - 내가 쓴 글만 수정/삭제 버튼이 보입니다.
-  - 레시피에 썸네일 지정 및 이미지 첨부가 가능합니다.
+- 3.2. 게시판 CRUD
+  - 레시피 등록/읽기/수정/삭제 가능합니다.
+  - 내가 쓴 레시피만 수정/삭제 버튼을 보여줍니다.
+  - 레시피에 썸네일 지정 및 이미지 첨부 가능합니다.
 
 ![comment](https://user-images.githubusercontent.com/68595933/190156574-b1177f35-113f-4191-8109-af52f74ceb08.png)
 
-- 3.3 댓글 CRUD
-  - 댓글의 등록/읽기/수정/삭제가 가능합니다.
-  - 내가 쓴 댓글만 수정/삭제 버튼이 보입니다.
-  - 별점(0~5개) 부여가 가능합니다. 단, 별점은 수정할 수 없습니다.
+- 3.3. 댓글 CRUD
+  - 댓글 등록/읽기/수정/삭제 가능합니다.
+  - 내가 쓴 댓글만 수정/삭제 버튼을 보여줍니다.
+  - 별점(0~5개) 부여 가능합니다. 단, 별점은 댓글 입력 후 따로 수정할 수 없습니다.
 
 ---
 
@@ -157,12 +159,12 @@
 
 ![recipe_review_main](https://user-images.githubusercontent.com/68595933/190326513-40faa999-bdeb-4bcd-ac3e-8d3e5cca1f7f.png)
 
-- 4.1 검색창
-  - 제목/내용/제목+내용/작성자로 검색합니다.
+- 4.1. 검색창
+  - (1)제목, (2)내용, (3)제목과 내용, (4)작성자로 검색합니다.
   - 레시피 후기(게시글)는 한 페이지에 9개(3*3)씩 출력되며 페이징 버튼을 통해 다른 페이지로 이동합니다.
 
 ```java
-// Recipe_reviewController.java //
+// Recipe_reviewController.java
 
 // 레시피_리뷰 목록
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
@@ -560,10 +562,10 @@
 ![recipe_review_view](https://user-images.githubusercontent.com/68595933/190326405-c321a692-2718-4167-ba36-77050db2a052.png)
 ![recipe_review_write](https://user-images.githubusercontent.com/68595933/190139479-b737df28-d225-45ae-b765-99eb5619add3.png)
 
-- 4.2 게시판 CRUD
-  - 후기의 등록/읽기/수정/삭제가 가능합니다.
-  - 내가 쓴 후기만 수정/삭제 버튼이 보입니다.
-  - 리뷰에 썸네일 지정 및 이미지 첨부가 가능합니다.
+- 4.2. 게시판 CRUD
+  - 후기 등록/읽기/수정/삭제 가능합니다.
+  - 내가 쓴 후기만 수정/삭제 버튼을 보여줍니다.
+  - 리뷰에 썸네일 지정 및 이미지 첨부 가능합니다.
   
 ```java
 // Recipe_reviewController.java
@@ -789,12 +791,13 @@
 
 ![recipe_review_comment](https://user-images.githubusercontent.com/68595933/190326240-9030924e-cafc-4690-9f4b-19acdae01222.png)
 
-- 4.3 댓글 CRUD
-  - 댓글의 등록/읽기/수정/삭제가 가능합니다.
-  - 내가 쓴 댓글만 수정/삭제 버튼이 보입니다.
+- 4.3. 댓글 CRUD
+  - 댓글 등록/읽기/수정/삭제 가능합니다.
+  - 내가 쓴 댓글만 수정/삭제 버튼을 보여줍니다.
   
 ```java
 // Recipe_review_commentController.java
+
 @RequestMapping(value = "/rlist") //댓글 리스트
 	@ResponseBody
 	private List<Recipe_review_commentVO> listComment(Recipe_review_commentVO vo, Model model) throws Exception{
